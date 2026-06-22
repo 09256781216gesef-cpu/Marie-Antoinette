@@ -1,0 +1,147 @@
+{
+  "shops": [
+    {
+      "id": 1,
+      "name": "Uji Matcha House",
+      "distance": "0.3 km",
+      "address": "BGC, Taguig City",
+      "rating": 4.8
+    },
+    {
+      "id": 2,
+      "name": "Kyoto Greens",
+      "distance": "0.7 km",
+      "address": "Makati Avenue, Makati",
+      "rating": 4.6
+    },
+    {
+      "id": 3,
+      "name": "Matcha & Co.",
+      "distance": "1.2 km",
+      "address": "Quezon City",
+      "rating": 4.5
+    }
+  ],
+  "drinks": [
+    {
+      "id": 1,
+      "shopId": 1,
+      "shop": "Uji Matcha House",
+      "category": "Latte",
+      "name": "Le Ceremonial Matcha Latte",
+      "price": 180,
+      "description": "Stone-ground Uji matcha whisked with steamed oat milk. Smooth, earthy, lightly sweet.",
+      "ingredients": ["Uji matcha", "Oat milk", "Honey"]
+    },
+    {
+      "id": 2,
+      "shopId": 1,
+      "shop": "Uji Matcha House",
+      "category": "Pure",
+      "name": "Le Usucha",
+      "price": 150,
+      "description": "Traditional thin matcha prepared with hot water. For purists who want the real taste.",
+      "ingredients": ["Ceremonial grade matcha", "Hot water"]
+    },
+    {
+      "id": 3,
+      "shopId": 2,
+      "shop": "Kyoto Greens",
+      "category": "Frappe",
+      "name": "Le Iced Matcha Frappe",
+      "price": 195,
+      "description": "Blended iced matcha with milk and light sweetness. Best for hot afternoons.",
+      "ingredients": ["Culinary matcha", "Milk", "Ice", "Vanilla syrup"]
+    },
+    {
+      "id": 4,
+      "shopId": 2,
+      "shop": "Kyoto Greens",
+      "category": "Latte",
+      "name": "Le Hojicha Matcha Latte",
+      "price": 170,
+      "description": "Roasted green tea meets matcha for a nutty, low-caffeine latte.",
+      "ingredients": ["Hojicha", "Matcha", "Steamed milk"]
+    },
+    {
+      "id": 5,
+      "shopId": 3,
+      "shop": "Matcha & Co.",
+      "category": "Special",
+      "name": "Le Strawberry Matcha",
+      "price": 210,
+      "description": "Layered strawberry puree and matcha milk. Sweet, creamy, very Instagrammable.",
+      "ingredients": ["Matcha", "Strawberry puree", "Milk", "Ice"]
+    },
+    {
+      "id": 6,
+      "shopId": 3,
+      "shop": "Matcha & Co.",
+      "category": "Latte",
+      "name": "Le Brown Sugar Matcha",
+      "price": 185,
+      "description": "Brown sugar syrup at the bottom, matcha milk on top. Stir before drinking.",
+      "ingredients": ["Matcha", "Brown sugar", "Fresh milk"]
+    },
+    {
+      "id": 7,
+      "shopId": 1,
+      "shop": "Le Uji Matcha House",
+      "category": "Pure",
+      "name": "Koicha",
+      "price": 220,
+      "description": "Thick, intense matcha for experienced drinkers. Rich and slightly bitter.",
+      "ingredients": ["Premium ceremonial matcha", "Hot water"]
+    },
+    {
+      "id": 8,
+      "shopId": 3,
+      "shop": "Le Matcha & Co.",
+      "category": "Set",
+      "name": "Le Espresso Matcha Fusion",
+      "price": 200,
+      "description": "A shot of espresso layered with matcha milk. Bitter, creamy, energizing.",
+      "ingredients": ["Espresso", "Matcha", "Milk", "Ice"]
+    },
+    {
+      "id": 9,
+      "shopId": 3,
+      "shop": "Le Matcha & Co.",
+      "category": "Set",
+      "name": "La Bleu Nuage",
+      "price": 510,
+      "description": "Silky soft cheesecake meets a buttery biscuit crust that crumbles like Parisian daydreams. Paired with a latte topped with cloud-soft marshmallows that melt into every sip. This sweet and tangy combination is light enough to float your afternoon away.",
+      "ingredients": ["Blueberry Cheesecake + Latte with Marshmallows"]
+    },
+    {
+      "id": 10,
+      "shopId": 3,
+      "shop": "Le Matcha & Co.",
+      "category": "Set",
+      "name": "Cest la tea",
+      "price": 1150,
+      "description": "Match your floral and cirtusy tea set with three French classics. Amour a Trois pastry set Creme Brulee + Strawberry Cake + Macaron - Paris in 3 bites.",
+      "ingredients": ["Roseship tea set + Pastry variety"]
+    },
+    {
+      "id": 11,
+      "shopId": 3,
+      "shop": "Le Matcha & Co.",
+      "category": "Set",
+      "name": "Petit Brule et Latte",
+      "price": 1120,
+      "description": "Velvety pudding topped with caramel sweetness. Paired with  fluffy cream topped cinnamon crumbs latte to balance the rich caramel, a combo for comfort.",
+      "ingredients": ["Caramel Pudding + Cloud biscuit latte"]
+    },
+    {
+      "id": 12,
+      "shopId": 3,
+      "shop": "Le Matcha & Co.",
+      "category": "Set",
+      "name": "Mon Chou Duvet",
+      "price": 650,
+      "description": "Exquisite baked fluff on buttery cinnamon crumbs and a classic latte or tea- a pair that compares to a humble morning on a Paris balcony nestled in this serene greenhouse cloud combination.",
+      "ingredients": ["Creampuff + Beverage of choice (latte or tea)"]
+    }
+  ]
+}
