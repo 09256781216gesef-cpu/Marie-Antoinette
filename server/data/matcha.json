@@ -111,8 +111,9 @@
       "name": "La Bleu Nuage",
       "price": 510,
       "description": "Silky soft cheesecake meets a buttery biscuit crust that crumbles like Parisian daydreams. Paired with a latte topped with cloud-soft marshmallows that melt into every sip. This sweet and tangy combination is light enough to float your afternoon away.",
-      "ingredients": ["Blueberry Cheesecake + Latte with Marshmallows"]
-    },
+      "ingredients": ["Blueberry Cheesecake + Latte with Marshmallows"],
+      "image": "nuage.PNG"
+      },
     {
       "id": 10,
       "shopId": 3,
@@ -121,7 +122,8 @@
       "name": "Cest la tea",
       "price": 1150,
       "description": "Match your floral and cirtusy tea set with three French classics. Amour a Trois pastry set Creme Brulee + Strawberry Cake + Macaron - Paris in 3 bites.",
-      "ingredients": ["Roseship tea set + Pastry variety"]
+      "ingredients": ["Roseship tea set + Pastry variety"],
+      "image": "ce.PNG"
     },
     {
       "id": 11,
@@ -131,7 +133,8 @@
       "name": "Petit Brule et Latte",
       "price": 1120,
       "description": "Velvety pudding topped with caramel sweetness. Paired with  fluffy cream topped cinnamon crumbs latte to balance the rich caramel, a combo for comfort.",
-      "ingredients": ["Caramel Pudding + Cloud biscuit latte"]
+      "ingredients": ["Caramel Pudding + Cloud biscuit latte"],
+      "image": "petit.PNG"
     },
     {
       "id": 12,
@@ -141,7 +144,8 @@
       "name": "Mon Chou Duvet",
       "price": 650,
       "description": "Exquisite baked fluff on buttery cinnamon crumbs and a classic latte or tea- a pair that compares to a humble morning on a Paris balcony nestled in this serene greenhouse cloud combination.",
-      "ingredients": ["Creampuff + Beverage of choice (latte or tea)"]
+      "ingredients": ["Creampuff + Beverage of choice (latte or tea)"],
+      "image": "duvet.PNG"
     }
   ]
 }

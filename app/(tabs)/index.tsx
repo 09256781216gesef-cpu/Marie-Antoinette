@@ -181,7 +181,7 @@ const styles = StyleSheet.create({
   },
   brandName: {
     fontFamily: "Cormorant Garamond SemiBold",
-    fontSize: 42,
+    fontSize: 31,
     fontWeight: "200",
     color: "#4a6741",
     letterSpacing: 6,
