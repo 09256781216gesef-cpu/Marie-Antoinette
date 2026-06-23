@@ -145,7 +145,7 @@ export default function MenuScreen() {
                   <Text
                     style={[styles.itemName, isTablet && styles.itemNameTablet]}
                   >
-                    Le {item.name}
+                    {item.name}
                   </Text>
                   <Text style={styles.itemDesc}>{item.desc}</Text>
                 </TouchableOpacity>

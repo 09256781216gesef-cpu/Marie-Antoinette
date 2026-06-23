@@ -28,7 +28,7 @@
       "shopId": 1,
       "shop": "Uji Matcha House",
       "category": "Latte",
-      "name": "Le Ceremonial Matcha Latte",
+      "name": "Ceremonial Matcha Latte",
       "price": 180,
       "description": "Stone-ground Uji matcha whisked with steamed oat milk. Smooth, earthy, lightly sweet.",
       "ingredients": ["Uji matcha", "Oat milk", "Honey"]
@@ -38,7 +38,7 @@
       "shopId": 1,
       "shop": "Uji Matcha House",
       "category": "Pure",
-      "name": "Le Usucha",
+      "name": "Usucha",
       "price": 150,
       "description": "Traditional thin matcha prepared with hot water. For purists who want the real taste.",
       "ingredients": ["Ceremonial grade matcha", "Hot water"]
@@ -48,7 +48,7 @@
       "shopId": 2,
       "shop": "Kyoto Greens",
       "category": "Frappe",
-      "name": "Le Iced Matcha Frappe",
+      "name": "Iced Matcha Frappe",
       "price": 195,
       "description": "Blended iced matcha with milk and light sweetness. Best for hot afternoons.",
       "ingredients": ["Culinary matcha", "Milk", "Ice", "Vanilla syrup"]
@@ -58,7 +58,7 @@
       "shopId": 2,
       "shop": "Kyoto Greens",
       "category": "Latte",
-      "name": "Le Hojicha Matcha Latte",
+      "name": "Hojicha Matcha Latte",
       "price": 170,
       "description": "Roasted green tea meets matcha for a nutty, low-caffeine latte.",
       "ingredients": ["Hojicha", "Matcha", "Steamed milk"]
@@ -68,7 +68,7 @@
       "shopId": 3,
       "shop": "Matcha & Co.",
       "category": "Special",
-      "name": "Le Strawberry Matcha",
+      "name": "Strawberry Matcha",
       "price": 210,
       "description": "Layered strawberry puree and matcha milk. Sweet, creamy, very Instagrammable.",
       "ingredients": ["Matcha", "Strawberry puree", "Milk", "Ice"]
@@ -78,7 +78,7 @@
       "shopId": 3,
       "shop": "Matcha & Co.",
       "category": "Latte",
-      "name": "Le Brown Sugar Matcha",
+      "name": "Brown Sugar Matcha",
       "price": 185,
       "description": "Brown sugar syrup at the bottom, matcha milk on top. Stir before drinking.",
       "ingredients": ["Matcha", "Brown sugar", "Fresh milk"]
@@ -86,7 +86,7 @@
     {
       "id": 7,
       "shopId": 1,
-      "shop": "Le Uji Matcha House",
+      "shop": "Uji Matcha House",
       "category": "Pure",
       "name": "Koicha",
       "price": 220,
@@ -96,9 +96,9 @@
     {
       "id": 8,
       "shopId": 3,
-      "shop": "Le Matcha & Co.",
+      "shop": "Matcha & Co.",
       "category": "Set",
-      "name": "Le Espresso Matcha Fusion",
+      "name": "Espresso Matcha Fusion",
       "price": 200,
       "description": "A shot of espresso layered with matcha milk. Bitter, creamy, energizing.",
       "ingredients": ["Espresso", "Matcha", "Milk", "Ice"]
@@ -106,7 +106,7 @@
     {
       "id": 9,
       "shopId": 3,
-      "shop": "Le Matcha & Co.",
+      "shop": "Matcha & Co.",
       "category": "Set",
       "name": "La Bleu Nuage",
       "price": 510,
@@ -116,7 +116,7 @@
     {
       "id": 10,
       "shopId": 3,
-      "shop": "Le Matcha & Co.",
+      "shop": "Matcha & Co.",
       "category": "Set",
       "name": "Cest la tea",
       "price": 1150,
@@ -126,7 +126,7 @@
     {
       "id": 11,
       "shopId": 3,
-      "shop": "Le Matcha & Co.",
+      "shop": "Matcha & Co.",
       "category": "Set",
       "name": "Petit Brule et Latte",
       "price": 1120,
@@ -136,7 +136,7 @@
     {
       "id": 12,
       "shopId": 3,
-      "shop": "Le Matcha & Co.",
+      "shop": "Matcha & Co.",
       "category": "Set",
       "name": "Mon Chou Duvet",
       "price": 650,

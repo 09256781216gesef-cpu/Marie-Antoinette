@@ -66,7 +66,7 @@ export default function MenuDetailScreen() {
           <Text style={styles.label}>marie antoinette order</Text>
           <Text style={styles.category}>{item.category}</Text>
           <Text style={[styles.name, isTablet && styles.nameTablet]}>
-            Le {item.name}
+            {item.name}
           </Text>
 
           <View style={styles.priceBox}>
