@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import matchaData from "../server/data/matcha.json";
 import { API_BASE } from "../constants/api";
+import NetInfo from "@react-native-community/netinfo";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -70,7 +71,7 @@ export function MenuProvider({ children }: { children: React.ReactNode }) {
   const [favorites, setFavorites] = useState<string[]>([]);
 
   useEffect(() => {
-    (async () => {
+    const checkConnectionAndFetch = async () => {
       // 1. Load favorites
       try {
         const favsRaw = await AsyncStorage.getItem("favorites");
@@ -149,7 +150,18 @@ export function MenuProvider({ children }: { children: React.ReactNode }) {
       }
 
       setIsLoaded(true);
-    })();
+    };
+
+    // Run once when the app first loads
+    checkConnectionAndFetch();
+
+    // Re-run automatically whenever connectivity changes (reconnects, disconnects)
+    const unsubscribe = NetInfo.addEventListener(() => {
+      checkConnectionAndFetch();
+    });
+
+    // Cleanup listener when component unmounts
+    return () => unsubscribe();
   }, []);
 
   async function persist(updated: MenuItem[]) {
