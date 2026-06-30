@@ -7,12 +7,13 @@ import {
   ActivityIndicator,
 } from "react-native";
 import { useRouter } from "expo-router";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useCart } from "../../context/CartContext";
 import { useMenu, type MenuItem } from "../../context/MenuContext";
 import { useTabletLayout } from "../../constants/layout";
 import CartPanel from "../../components/CartPanel";
 import { Ionicons } from "@expo/vector-icons";
+import NetInfo from "@react-native-community/netinfo";
 
 // ─── Menu Screen ─────────────────────────────────────────────────────────────
 
@@ -31,6 +32,15 @@ export default function MenuScreen() {
   const [toastVisible, setToastVisible] = useState(false);
   const [toastItem, setToastItem] = useState("");
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const [isConnected, setIsConnected] = useState(true);
+
+  useEffect(() => {
+    const unsubscribe = NetInfo.addEventListener((state) => {
+      setIsConnected(state.isConnected ?? true);
+    });
+    return () => unsubscribe();
+  }, []);
 
   async function handleAddToCart(item: MenuItem) {
     try {
@@ -78,7 +88,7 @@ export default function MenuScreen() {
           </Text>
         </View>
 
-        {fetchError && (
+        {fetchError && !isConnected && (
           <View style={styles.errorBanner}>
             <Text style={styles.errorBannerText}>
               no internet connection — showing last saved menu
