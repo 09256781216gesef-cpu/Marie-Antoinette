@@ -174,7 +174,7 @@ export default function WelcomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 130,
+    paddingTop: 100,
     backgroundColor: "#B8D5D9",
     justifyContent: "flex-start",
     alignItems: "center",
@@ -253,7 +253,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     paddingVertical: 16,
     alignItems: "center",
-    marginBottom: 12,
+    marginBottom: 10,
     minHeight: 52,
     justifyContent: "center",
   },

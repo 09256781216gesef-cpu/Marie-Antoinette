@@ -209,6 +209,7 @@ export default function MenuScreen() {
 const styles = StyleSheet.create({
   splitContainer: {
     flex: 1,
+    paddingTop: 10,
     flexDirection: "row",
     backgroundColor: "#B8D5D9",
   },
