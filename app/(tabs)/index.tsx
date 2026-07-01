@@ -5,11 +5,12 @@ import {
   TouchableOpacity,
   Image,
   TextInput,
+  Animated,
 } from "react-native";
 import { useRouter } from "expo-router";
 import { useCart } from "../../context/CartContext";
 import { useTabletLayout } from "../../constants/layout";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 // ─── Welcome / Kiosk Home Screen ─────────────────────────────────────────────
@@ -21,6 +22,16 @@ export default function WelcomeScreen() {
   const [profileName, setProfileName] = useState("");
   const [editingName, setEditingName] = useState(false);
   const [draftName, setDraftName] = useState("");
+
+  const widthAnim = useRef(new Animated.Value(120)).current;
+
+  useEffect(() => {
+    Animated.timing(widthAnim, {
+      toValue: editingName ? 220 : 120,
+      duration: 200,
+      useNativeDriver: false,
+    }).start();
+  }, [editingName]);
 
   useEffect(() => {
     AsyncStorage.getItem("profileName")
@@ -122,7 +133,7 @@ export default function WelcomeScreen() {
           </TouchableOpacity>
         )}
       </View>
-      <View style={styles.profileCorner}>
+      <Animated.View style={[styles.profileCorner, { width: widthAnim }]}>
         <Text style={styles.profileLabel}>profile</Text>
         {editingName ? (
           <View style={styles.profileEditRow}>
@@ -153,7 +164,7 @@ export default function WelcomeScreen() {
             <Text style={styles.profileEditHint}>edit</Text>
           </TouchableOpacity>
         )}
-      </View>
+      </Animated.View>
     </View>
   );
 }
@@ -163,8 +174,9 @@ export default function WelcomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingTop: 130,
     backgroundColor: "#B8D5D9",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     alignItems: "center",
   },
   inner: {
@@ -304,7 +316,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#4a6741",
     borderWidth: 4,
     borderRadius: 20,
-    top: 16,
+    top: 50,
     right: 16,
     zIndex: 10,
     alignItems: "flex-end",
