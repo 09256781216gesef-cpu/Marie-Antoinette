@@ -170,7 +170,7 @@ export default function CartScreen() {
         <View style={styles.card}>
           <Text style={styles.cardLabel}>order note</Text>
           <Text style={styles.cartNoteHint}>
-            add a note for the whole order (stays saved between sessions)
+            add a note for the whole order
           </Text>
           <TextInput
             style={styles.noteInput}
@@ -239,7 +239,7 @@ const styles = StyleSheet.create({
   },
   emptyBox: {
     borderWidth: 1,
-    borderStyle: "dashed",
+    borderStyle: "solid",
     borderColor: "#ccc",
     padding: 16,
     margin: 20,
@@ -258,28 +258,33 @@ const styles = StyleSheet.create({
     lineHeight: 20,
   },
   card: {
-    borderWidth: 1,
+    borderWidth: 0,
     borderRadius: 20,
-    borderColor: "#000",
+    borderColor: "#fff",
     padding: 16,
     marginHorizontal: 20,
-    marginBottom: 12,
-    backgroundColor: "#C1D590",
+    marginBottom: 19,
+    backgroundColor: "#B8D5D9",
+    shadowColor: "#1d1d23",
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.08,
+    shadowRadius: 4,
+    elevation: 3,
   },
   cardTablet: {
     padding: 20,
   },
   cardLabel: {
     fontSize: 10,
-    color: "#538377",
+    color: "#2B5B09",
     letterSpacing: 1,
     textTransform: "uppercase",
-    marginBottom: 6,
+    marginTop: 0,
   },
   cardItemName: {
     fontSize: 18,
     fontWeight: "400",
-    color: "#000",
+    color: "#2B5B09",
     marginBottom: 4,
   },
   cardItemNameTablet: {
@@ -292,7 +297,9 @@ const styles = StyleSheet.create({
   },
   instructionButton: {
     borderWidth: 1,
-    borderColor: "#000",
+    borderRadius: 20,
+    borderColor: "#fff",
+    backgroundColor: "#ffffff",
     paddingHorizontal: 12,
     paddingVertical: 12,
     marginBottom: 8,
@@ -302,24 +309,27 @@ const styles = StyleSheet.create({
   instructionButtonText: {
     fontSize: 12,
     borderRadius: 20,
-    color: "#538377",
+    color: "#2B5B09",
     letterSpacing: 0.5,
     textTransform: "lowercase",
   },
   noteInput: {
     minHeight: 80,
     borderWidth: 1,
-    borderColor: "#000",
+    borderRadius: 20,
     padding: 12,
     fontSize: 13,
     color: "#000",
     backgroundColor: "#fff",
+    borderColor: "#fff",
     textAlignVertical: "top",
-    marginBottom: 8,
+    marginBottom: 2,
   },
   removeButton: {
     borderWidth: 1,
-    borderColor: "#000",
+    borderRadius: 20,
+    borderColor: "#fff",
+    backgroundColor: "#ffffff",
     paddingVertical: 12,
     alignItems: "center",
     minHeight: 48,
@@ -333,8 +343,9 @@ const styles = StyleSheet.create({
   },
   addMoreButton: {
     borderWidth: 1,
-    borderColor: "#000",
+    borderColor: "#2B5B09",
     borderStyle: "dashed",
+    borderRadius: 20,
     paddingVertical: 14,
     alignItems: "center",
     marginHorizontal: 20,
@@ -349,15 +360,20 @@ const styles = StyleSheet.create({
     textTransform: "lowercase",
   },
   confirmButton: {
-    borderWidth: 1,
-    borderColor: "#000",
-    backgroundColor: "#000",
+    borderRadius: 20,
+    borderColor: "#fff",
+    backgroundColor: "#2B5B09",
     paddingVertical: 16,
     alignItems: "center",
     marginHorizontal: 20,
     marginBottom: 32,
-    minHeight: 56,
+    minHeight: 52,
     justifyContent: "center",
+    shadowColor: "#1d1d23",
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.08,
+    shadowRadius: 4,
+    elevation: 3,
   },
   confirmButtonTablet: {
     paddingVertical: 22,
@@ -366,6 +382,7 @@ const styles = StyleSheet.create({
   confirmButtonText: {
     color: "#fff",
     fontSize: 13,
+    paddingBottom: 10,
     letterSpacing: 1,
     textTransform: "lowercase",
   },
@@ -376,8 +393,8 @@ const styles = StyleSheet.create({
   button: {
     borderWidth: 1,
     borderRadius: 20,
-    borderColor: "#4a6741",
-    backgroundColor: "#4a6741",
+    borderColor: "#2B5B09",
+    backgroundColor: "#2B5B09",
     paddingVertical: 14,
     alignItems: "center",
     marginHorizontal: 20,

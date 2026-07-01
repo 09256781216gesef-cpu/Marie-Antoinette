@@ -141,7 +141,7 @@ export default function WelcomeScreen() {
               style={styles.profileInput}
               value={draftName}
               onChangeText={setDraftName}
-              placeholder="enter your name..."
+              placeholder="Enter name..."
               placeholderTextColor="#bbb"
               autoFocus
               onSubmitEditing={saveName}
@@ -159,7 +159,7 @@ export default function WelcomeScreen() {
                 !profileName && styles.profileNamePlaceholder,
               ]}
             >
-              {profileName || "tap to set your name"}
+              {profileName || "Enter name"}
             </Text>
             <Text style={styles.profileEditHint}>edit</Text>
           </TouchableOpacity>
@@ -189,7 +189,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 64,
   },
   brandBlock: {
-    marginBottom: 40,
+    marginBottom: 10,
   },
   brandName: {
     fontFamily: "Cormorant Garamond SemiBold",
@@ -216,11 +216,13 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   prompt: {
+    fontFamily: "Cormorant Garamond Italic",
     fontSize: 18,
-    color: "#",
+    color: "#538377",
     fontWeight: "300",
-    marginBottom: 24,
+    marginBottom: 15,
     letterSpacing: 0.5,
+    marginTop: 0,
   },
   promptTablet: {
     fontSize: 24,
@@ -230,6 +232,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#2B5B09",
     borderStyle: "dashed",
+    borderRadius: 20,
     padding: 16,
     marginBottom: 32,
   },
@@ -274,7 +277,7 @@ const styles = StyleSheet.create({
   resumeButton: {
     borderWidth: 1,
     borderRadius: 20,
-    borderColor: "#tit",
+    borderColor: "#538377",
     paddingVertical: 14,
     alignItems: "center",
     minHeight: 52,
@@ -312,8 +315,8 @@ const styles = StyleSheet.create({
   },
   profileCorner: {
     position: "absolute",
-    borderColor: "#4a6741",
-    backgroundColor: "#4a6741",
+    borderColor: "#538377",
+    backgroundColor: "#538377",
     borderWidth: 4,
     borderRadius: 20,
     top: 50,
@@ -360,20 +363,20 @@ const styles = StyleSheet.create({
   profileInput: {
     flex: 1,
     borderWidth: 1,
-    borderColor: "#2B5B09",
+    borderColor: "#538377",
     borderRadius: 20,
     paddingHorizontal: 10,
     paddingVertical: 8,
     fontSize: 14,
     fontWeight: 300,
-    color: "#000",
+    color: "#999",
     maxWidth: 80,
   },
   profileSaveBtn: {
     borderWidth: 1,
     borderRadius: 20,
     borderColor: "#2B5B09",
-    backgroundColor: "#2B5B09",
+    backgroundColor: "#538377",
     paddingHorizontal: 14,
     paddingVertical: 8,
     minHeight: 40,
